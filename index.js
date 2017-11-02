@@ -4,8 +4,10 @@ var app = express()
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
-app.get('/', function(request, response) {
-  response.send('************ Welcome to Backer Media Lead Management! **************01')
+app.get('/', function(request, response) {  
+   response.writeHead(200, {'Content-Type': 'text/html'});
+   response.write('<h4>  Welcome to Backer Media Lead Management! </h4>');
+   response.end();
 })
 
 app.get('/company', function(request, response) {
