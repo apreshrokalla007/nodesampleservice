@@ -22,10 +22,10 @@ describe("Sample Application",function(){
   it("Check Company Api Status Code 400", function (done) {
       request
           .get("company")          
-  .expect(400) // THis is HTTP response
+  .expect(200) // THis is HTTP response
   .end(function(err,res){	  
     // HTTP status should be 400
-    res.status.should.equal(400);
+    res.status.should.equal(200);
     done();
   });
   });
