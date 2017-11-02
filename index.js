@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {  
    response.writeHead(200, {'Content-Type': 'text/html'});
-   response.write('<h4>  Welcome to Backer Media Lead Management! </h4>');
+   response.write('<h1>  Welcome to Backer Media Lead Management! </h1>');
    response.end();
 })
 
@@ -17,6 +17,19 @@ app.get('/company', function(request, response) {
 })
 
 app.get('/user', function(request, response) {
+  response.status(200);
+  response.setHeader('Content-Type', 'application/json');
+  response.send(JSON.stringify({ "userName": "Ram" }));
+})
+
+
+app.get('/user2', function(request, response) {
+  response.status(200);
+  response.setHeader('Content-Type', 'application/json');
+  response.send(JSON.stringify({ "userName": "Ram" }));
+})
+
+app.get('/user3', function(request, response) {
   response.status(200);
   response.setHeader('Content-Type', 'application/json');
   response.send(JSON.stringify({ "userName": "Ram" }));
