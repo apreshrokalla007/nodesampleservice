@@ -8,27 +8,25 @@ describe("Sample Application",function(){
 
   it("Check Company Api Status Code 200", function (done) {
       request
-          .get("company")
-          .expect("Content-type",/json/)
-  .expect(200) // THis is HTTP response
-  .end(function(err,res){	  
-    // HTTP status should be 200
-    res.status.should.equal(200);
-    done();
-  });
+      .get('company')
+      .set('Accept', 'application/json')
+      .expect(200)
+      .end(function(err, res) {
+        if (err) return done(err);
+        done();
+      });
   });
   
   
   it("Check Company Api Status Code 400", function (done) {
       request
-          .get("company")          
-  .expect(200) // THis is HTTP response
-  .end(function(err,res){	  
-    // HTTP status should be 400
-    res.status.should.equal(400);
-    done();
-  });
-  });
-});
+      .get('company')
+      .set('Accept', 'application/json')
+      .expect(400)
+      .end(function(err, res) {
+        if (err) return done(err);
+        done();
+      });
+   });
 
 
