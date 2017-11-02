@@ -20,11 +20,6 @@ app.get('/user', function(request, response) {
   response.send(JSON.stringify({ "userName": "Ram" }));
 })
 
-app.get('/user2', function(request, response) {
-  response.status(200);
-  response.setHeader('Content-Type', 'application/json');
-  response.send(JSON.stringify({ "userName": "Ram" }));
-})
 
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
