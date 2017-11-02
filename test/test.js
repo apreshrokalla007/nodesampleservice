@@ -20,9 +20,9 @@ describe("Sample Application",function(){
   
   it("Check Company Api Status Code 400", function (done) {
       request
-      .get('company')
+      .get('company2')
       .set('Accept', 'application/json')
-      .expect(200)
+      .expect(400)
       .end(function(err, res) {
         if (err) return done(err);
         done();
