@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
    response.write('<h1>  **** Welcome to Backer Media Lead Management! **** </h1>');
    response.end();
 })
-dffd
+
 app.get('/company', function(request, response) {
   response.status(200);
   response.setHeader('Content-Type', 'application/json');
