@@ -1,6 +1,6 @@
 var supertest = require("supertest");
 var should = require("should");
-var request = supertest.agent("http://localhost:5000/");
+var request = supertest.agent("https://sampleherokuappshark.herokuapp.com/");
 
 
 
