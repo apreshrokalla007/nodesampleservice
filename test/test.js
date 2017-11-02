@@ -25,7 +25,7 @@ describe("Sample Application",function(){
   .expect(200) // THis is HTTP response
   .end(function(err,res){	  
     // HTTP status should be 400
-    res.status.should.equal(200);
+    res.status.should.equal(400);
     done();
   });
   });
