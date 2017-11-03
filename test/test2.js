@@ -4,7 +4,7 @@ var ip = require('ip');
 var request = supertest.agent("http://localhost:5000/");
 //var request = supertest.agent("https://sampleherokuappshark.herokuapp.com/");
 
-describe("Sample Application",function(){
+describe("Test 2",function(){
 
   it("Check user2 Api Status Code 200", function (done) {
       request
