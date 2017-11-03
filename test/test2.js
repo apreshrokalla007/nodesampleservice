@@ -20,7 +20,7 @@ describe("Sample Application",function(){
   
   it("Check user3 Api Status Code 200", function (done) {
       request
-      .get('user355')
+      .get('user3')
       .set('Accept', 'application/json')
       .expect(200)
       .end(function(err, res) {
