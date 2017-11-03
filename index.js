@@ -5,7 +5,7 @@ var ip = require('ip');
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
-console.log("Script running");
+console.log("S");
 
 app.get('/', function(request, response) {  
 
