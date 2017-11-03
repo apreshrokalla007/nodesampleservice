@@ -5,7 +5,7 @@ var request = supertest.agent("http://localhost:5000/");
 
 describe("Sample Application",function(){
 
-  it("Check Company Api Status Code 200", function (done) {
+  it("Check user2 Api Status Code 200", function (done) {
       request
       .get('user2')
       .set('Accept', 'application/json')
@@ -17,7 +17,7 @@ describe("Sample Application",function(){
   });
   
   
-  it("Check Company Api Status Code 400", function (done) {
+  it("Check user3 Api Status Code 200", function (done) {
       request
       .get('user3')
       .set('Accept', 'application/json')

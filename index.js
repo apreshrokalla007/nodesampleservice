@@ -31,27 +31,27 @@ app.get('/company', function(request, response) {
 app.get('/user', function(request, response) {
   response.status(200);
   response.setHeader('Content-Type', 'application/json');
-  response.send(JSON.stringify({ "userName": "Ram" }));
+  response.send(JSON.stringify({ "userName": "User1" }));
 });
 
 
 app.get('/user2', function(request, response) {
   response.status(200);
   response.setHeader('Content-Type', 'application/json');
-  response.send(JSON.stringify({ "userName": "Ram" }));
+  response.send(JSON.stringify({ "userName": "User2" }));
 });
 
 app.get('/user3', function(request, response) {
   response.status(200);
   response.setHeader('Content-Type', 'application/json');
-  response.send(JSON.stringify({ "userName": "Ram" }));
+  response.send(JSON.stringify({ "userName": "User3" }));
 });
 
 
 app.get('/user4', function(request, response) {
   response.status(200);
   response.setHeader('Content-Type', 'application/json');
-  response.send(JSON.stringify({ "userName": "Ram" }));
+  response.send(JSON.stringify({ "userName": "User4" }));
 });
 
 app.get('/user5', function(request, response) {

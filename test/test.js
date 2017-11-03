@@ -18,7 +18,7 @@ describe("Sample Application",function(){
   });
   
   
-  it("Check Company Api Status Code 400", function (done) {
+  it("Check User Api Status Code 200", function (done) {
       request
       .get('user')
       .set('Accept', 'application/json')
