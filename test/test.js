@@ -11,7 +11,7 @@ describe("Test 1",function(){
       request
       .get('company')
       .set('Accept', 'application/json')
-      .expect(400)
+      .expect(200)
       .end(function(err, res) {
         if (err) return done(err);
         done();
