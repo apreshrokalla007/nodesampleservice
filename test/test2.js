@@ -3,8 +3,6 @@ var should = require("should");
 var request = supertest.agent("http://localhost:5000/");
 //var request = supertest.agent("https://sampleherokuappshark.herokuapp.com/");
 
-
-
 describe("Sample Application",function(){
 
   it("Check Company Api Status Code 200", function (done) {
