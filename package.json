@@ -14,6 +14,7 @@
     "supertest": "^3.0.0",
     "mocha-junit-reporter": "^1.15.0",
     "jshint-jenkins-checkstyle-reporter": "^0.1.2",
-    "jshint": "^2.9.5"
+    "jshint": "^2.9.5",
+    "ip": "^1.1.5"
   }
 }

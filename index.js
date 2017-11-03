@@ -1,12 +1,14 @@
 var express = require('express');
 var app = express();
+var ip = require('ip');
 
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {  
+
    response.writeHead(200, {'Content-Type': 'text/html'});
-   response.write('<h1>  ** Welcome to Backer Media Lead Management Release 2 ** </h1>');
+   response.write('<h1>  ** Welcome to Backer Media Lead Management Release 2 ** </h1>'+ip.address());
    response.end();
 });
 
