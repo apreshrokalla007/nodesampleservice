@@ -1,5 +1,6 @@
 var supertest = require("supertest");
 var should = require("should");
+var ip = require('ip');
 var request = supertest.agent("http://localhost:5000/");
 //var request = supertest.agent("https://sampleherokuappshark.herokuapp.com/");
 
@@ -9,7 +10,7 @@ describe("Sample Application",function(){
       request
       .get('user2')
       .set('Accept', 'application/json')
-      .expect(200)
+      .expect(400)
       .end(function(err, res) {
         if (err) return done(err);
         done();
@@ -21,7 +22,7 @@ describe("Sample Application",function(){
       request
       .get('user3')
       .set('Accept', 'application/json')
-      .expect(200)
+      .expect(400)
       .end(function(err, res) {
         if (err) return done(err);
         done();
