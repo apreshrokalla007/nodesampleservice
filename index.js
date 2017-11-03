@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {  
    response.writeHead(200, {'Content-Type': 'text/html'});
-   response.write('<h1>  ** Welcome to Backer Media Lead Management Release 1 ** </h1>');
+   response.write('<h1>  ** Welcome to Backer Media Lead Management Release 2 ** </h1>');
    response.end();
 });
 
