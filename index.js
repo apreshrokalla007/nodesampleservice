@@ -5,8 +5,11 @@ var ip = require('ip');
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
+console.log("Script running");
+
 app.get('/', function(request, response) {  
 
+   console.log("Home Request");
    response.writeHead(200, {'Content-Type': 'text/html'});
    response.write('<h1>  ** Welcome to Backer Media Lead Management Release 2 ** </h1>'+ip.address());
    response.end();
