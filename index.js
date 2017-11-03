@@ -1,12 +1,21 @@
 var express = require('express');
 var app = express();
 var ip = require('ip');
+var gulp = require('gulp');
+var jshint = require('gulp-jshint');
 
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
 console.log("S");
 
+
+
+gulp.task('lint', function() {
+  return gulp.src('./lib/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('gulp-checkstyle-jenkins-reporter'));
+});
 app.get('/', function(request, response) {  
 
    console.log("Home Request");
