@@ -9,8 +9,6 @@ app.use(express.static(__dirname + '/public'));
 
 console.log("S");
 
-
-
 gulp.task('lint', function() {
   return gulp.src('./lib/*.js')
     .pipe(jshint())
