@@ -8,7 +8,7 @@ describe("Sample Application",function(){
 
   it("Check user2 Api Status Code 200", function (done) {
       request
-      .get('user11')
+      .get('user2')
       .set('Accept', 'application/json')
       .expect(200)
       .end(function(err, res) {
@@ -20,7 +20,7 @@ describe("Sample Application",function(){
   
   it("Check user3 Api Status Code 200", function (done) {
       request
-      .get('user3')
+      .get('user355')
       .set('Accept', 'application/json')
       .expect(200)
       .end(function(err, res) {
