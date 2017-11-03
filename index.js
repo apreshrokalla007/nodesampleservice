@@ -48,6 +48,11 @@ app.get('/user5', function(request, response) {
   response.send(JSON.stringify({ "userName": "Ram" }));
 });
 
+app.get('/test', function(request, response) {  
+   response.writeHead(200, {'Content-Type': 'text/html'});
+   response.write('<h1>  ** Welcome to Backer Media Lead Management Release 2 ** </h1>');
+   response.end();
+});
 
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
