@@ -18,9 +18,9 @@ ALTER TABLE public."user"
     OWNER to postgres;
 	
 -- ALTER TABLE public."user" DROP COLUMN phone;
-
+/*
 ALTER TABLE public."user"
     ADD COLUMN phone integer;
-	
+	*/
 ALTER TABLE public."user"
     ALTER COLUMN phone TYPE bigint ;	
