@@ -14,9 +14,6 @@ WITH (
 )
 TABLESPACE pg_default;
 
-ALTER TABLE public."user"
-    OWNER to postgres;
-	
 -- ALTER TABLE public."user" DROP COLUMN phone;
 
 ALTER TABLE public."user"
