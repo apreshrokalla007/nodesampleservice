@@ -8,11 +8,6 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
 
-gulp.task('lint', function() {
-  return gulp.src('./lib/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('gulp-checkstyle-jenkins-reporter'));
-});
 app.get('/', function(request, response) {  
 
    console.log("Home Request");
