@@ -7,7 +7,6 @@ var jshint = require('gulp-jshint');
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
-console.log("S");
 
 gulp.task('lint', function() {
   return gulp.src('./lib/*.js')
@@ -74,5 +73,5 @@ app.get('/test', function(request, response) {
 });
 
 app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
+  console.log("Node app is running at localhost:" + app.get('port'))
 });
