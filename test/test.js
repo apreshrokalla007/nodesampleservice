@@ -4,7 +4,6 @@ var ip = require('ip');
 
 var build_url = process.env.BUILD_URL;
 var request = supertest.agent(build_url);
-//var request = supertest.agent("https://sampleherokuappshark.herokuapp.com/");
 
 console.log(build_url);
 describe("Test 1",function(){
@@ -23,7 +22,7 @@ describe("Test 1",function(){
   
   it("Check User Api Status Code 200", function (done) {
       request
-      .get('user')
+      .get('user3')
       .set('Accept', 'application/json')
       .expect(200)
       .end(function(err, res) {
