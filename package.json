@@ -2,7 +2,7 @@
   "name": "samplenode",
   "version": "0.2.0",
   "description": "A sample Node.js app using Express 4",
-  "license" : "SEE LICENSE IN <filename>", 
+  "license": "SEE LICENSE IN <filename>",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -21,7 +21,7 @@
     "gulp-jshint": "^2.0.4"
   },
   "repository": {
-  "type": "git",
-  "url": "https://github.com/apreshrokalla007/nodesampleservice.git"
-}
+    "type": "git",
+    "url": "https://github.com/apreshrokalla007/nodesampleservice.git"
+  }
 }
