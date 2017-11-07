@@ -1,10 +1,12 @@
 var supertest = require("supertest");
 var should = require("should");
 var ip = require('ip');
-var request = supertest.agent("http://localhost:5000/");
+
+var build_url = process.env.BUILD_URL;
+var request = supertest.agent(build_url);
 //var request = supertest.agent("https://sampleherokuappshark.herokuapp.com/");
 
-
+console.log(build_url);
 describe("Test 1",function(){
 
   it("Check Company Api Status Code 200", function (done) {

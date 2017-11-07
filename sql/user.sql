@@ -51,3 +51,4 @@ ALTER TABLE public."user"
 END IF;
 END
 $$;
+
