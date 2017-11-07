@@ -59,6 +59,11 @@ app.get('/user5', function(request, response) {
   response.send(JSON.stringify({ "userName": "Ram" }));
 });
 
+app.get('/user6', function(request, response) {
+  response.status(200);
+  response.setHeader('Content-Type', 'application/json');
+  response.send(JSON.stringify({ "userName": "user6" }));
+});
 
 
 app.get('/test', function(request, response) {  
